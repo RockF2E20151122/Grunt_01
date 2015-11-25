@@ -7,4 +7,34 @@
     "grunt-contrib-nodeunit": "~0.4.1",
     "grunt-contrib-uglify": "~0.5.0"
   }
+  
+	"logo": "    (\\_/)\n * foo(='.'=)\n *    (\")_(\")",
+	"description": "play with Grunt",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodemon ."
+	},
+	"repository": "",
+	"author": {
+		"name": "StubHub, Inc.",
+		"email": "dihwang@ebay.com"
+	},
+	"contributors": [
+		{
+			"name": "Edward Maesen",
+			"email": "emaesen@stubhub.com"
+		},
+		{
+			"name": "Read Whittier",
+			"email": "rwhittier@stubhub.com"
+		}
+	],
+	"copyright": "Inc.  All rights reserved.",
+	"license": "Released under the !!TBD!! license",
+	"readmeFilename": "README.md",
+	"engines": {
+		"node": "0.10.29"
+	},
+  
+  
 }

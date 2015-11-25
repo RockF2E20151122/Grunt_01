@@ -19,5 +19,10 @@ module.exports = function(grunt) {
 
 	// 默认被执行的任务列表。
 	grunt.registerTask('default', [ 'uglify' ]);
-
+	
+	grunt.registerTask('default', 'Log some stuff.', function() {
+		grunt.log.write('Logging some stuff...').ok();
+	});
+	
+	
 };
