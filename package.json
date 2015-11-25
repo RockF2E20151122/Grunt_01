@@ -6,7 +6,7 @@
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-contrib-nodeunit": "~0.4.1",
     "grunt-contrib-uglify": "~0.5.0"
-  }
+  },
   
 	"logo": "    (\\_/)\n * foo(='.'=)\n *    (\")_(\")",
 	"description": "play with Grunt",
@@ -34,7 +34,7 @@
 	"readmeFilename": "README.md",
 	"engines": {
 		"node": "0.10.29"
-	},
+	}
   
   
 }

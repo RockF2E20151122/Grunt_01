@@ -1,4 +1,7 @@
 module.exports = function(grunt) {
+	var a = 1;
+	
+	grunt.log.write('Into exports.').ok();
 
 	// Project configuration.
 	grunt.initConfig({
@@ -12,15 +15,17 @@ module.exports = function(grunt) {
 						dest : 'build/<%= pkg.name %>.min.js'
 					}
 				}
-			});
+			}, function(){
+				grunt.log.write('fuck callback').ok()
+			}() );
 
 	// 加载包含 "uglify" 任务的插件。
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 
 	// 默认被执行的任务列表。
-	grunt.registerTask('default', [ 'uglify' ]);
+//	grunt.registerTask('default', [ 'uglify' ]);
 	
-	grunt.registerTask('default', 'Log some stuff.', function() {
+	grunt.registerTask('default', [ 'uglify' ], function() {
 		grunt.log.write('Logging some stuff...').ok();
 	});
 	
